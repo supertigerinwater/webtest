@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return str(randrange(1,7))
+    return "The dicing number is: ", str(randrange(1,7))
 
 if __name__ == "__main__":
     app.run()
